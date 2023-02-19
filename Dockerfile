@@ -7,7 +7,7 @@ RUN apt-get -y install git
 RUN apt-get install -y nodejs \
 npm
 RUN npm install -g npx
-RUN npm cache verify
+RUN npm cache clean -f
 RUN apt-get install -y curl unzip
 
 RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
