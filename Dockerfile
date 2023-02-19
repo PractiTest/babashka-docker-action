@@ -4,7 +4,8 @@ FROM babashka/babashka
 # Install Babashka script dependencies
 RUN apt-get -y update
 RUN apt-get -y install git
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs \
+npm
 RUN npm install -g npx
 RUN apt-get install -y curl unzip
 
