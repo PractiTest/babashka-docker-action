@@ -5,7 +5,7 @@ FROM babashka/babashka
 RUN apt-get -y update
 RUN apt-get -y install git
 RUN git config --global --add safe.directory /github/workspace
-RUN npm install -g npx
+RUN apt-get install -y nodejs
 RUN apt-get install -y curl unzip
 
 RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
