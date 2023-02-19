@@ -14,8 +14,8 @@ RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zi
   && rm -rf aws awscliv2.zip
 RUN apt-get install -y nodejs \
 npm
-#RUN npm install -g npx
-#RUN npm cache clean -f
+RUN apt-get install default-jre
+
 
 
 # Copy entry point script from action repository to the filesystem path `/` of the container
