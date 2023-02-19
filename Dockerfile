@@ -14,7 +14,7 @@ RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zi
   && rm -rf aws awscliv2.zip
 RUN apt-get install -y nodejs \
 npm
-RUN apt-get install default-jre
+RUN apt-get -y install default-jre
 
 
 
