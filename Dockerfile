@@ -5,6 +5,9 @@ FROM babashka/babashka
 RUN apt-get -y update
 RUN apt-get -y install git
 RUN apt-get install -y curl unzip
+RUN curl -O https://download.clojure.org/install/linux-install-1.11.1.1224.sh \
+  && chmod +x linux-install-1.11.1.1224.sh \
+  && ./linux-install-1.11.1.1224.sh
 RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
   && unzip awscliv2.zip \
   && ./aws/install \
