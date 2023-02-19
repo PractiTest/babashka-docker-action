@@ -1,4 +1,4 @@
-# Base container image
+# Base Container image
 FROM babashka/babashka
 
 # Install Babashka script dependencies
