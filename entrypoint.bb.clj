@@ -43,7 +43,7 @@
 (defn exit-message
   "Return a formatted output message for the Docker action workflow"
   [message]
-  (str "bb_out"=message >> $GITHUB_OUTPUT))
+  (str "bb_out="message >> $GITHUB_OUTPUT))
 
 (defn parse-args
   "Parse and validate command line arguments. Either return a map indicating
